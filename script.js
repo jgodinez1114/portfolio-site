@@ -1,4 +1,4 @@
-/* script.js
+/****************************************    script.js    ****************************************************
     Programmer:     Joel Godinez
     
     Purpose:        Develop a resume website to showcase projects using Tailwind CSS and vanilla JavaScript
@@ -12,8 +12,7 @@
      Implementation: 3 hours  4 hours(so far)
      Testing:        2 hours  1 hour(so far)
 
+**************************************************************************************************************/
 
-*/
 
-
-alert('Welcome!')
+alert('Welcome, all!')

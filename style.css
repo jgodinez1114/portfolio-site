@@ -1,4 +1,4 @@
-/* style.css
+/**************************************    style.css    ***********************************************
     Programmer:     Joel Godinez
     
     Purpose:        Develop a resume website to showcase projects using Tailwind CSS and vanilla JavaScript
@@ -12,10 +12,10 @@
      Implementation: 3 hours  4 hours(so far)
      Testing:        2 hours  1 hour(so far)
 
+******************************************************************************************************/
 
-*/
 
-
-/*body{
-    background-color: purple;
-}*/
+html{
+    scroll-behavior: smooth;
+    background-color:rgb(41, 38, 38);
+}
