@@ -176,18 +176,22 @@ Estimates                Actuals
             <div class="bg-teal-400 p-4 rounded shadow-md text-left">
                 <div class="flex">
                     <div class="mb-3 mr-2 pt-0 flex-1">
-                        <label class="text-lg">Name</label>
+                        <!--Note: Margin bottom (mb) does not work on inline elements. Use 'inline-block'-->
+                        <label class="text-xl text-white inline-block mb-2">Name:</label>
+                        <!--Deleted a repeated background class attribute-->
                         <input type="text" placeholder="Name"
-                            class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                            class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full" />
                     </div>
                     <div class="mb-3 ml-2 pt-0 flex-1">
+                        <label class="text-xl text-white inline-block mb-2">Email:</label>
                         <input type="email" placeholder="Email"
-                            class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" />
+                            class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full" />
                     </div>
                 </div>
                 <div class="mb-3 pt-0">
+                    <label class="text-xl text-white inline-block mb-2">Message:</label>
                     <textarea placeholder="Message"
-                        class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full"></textarea>
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"></textarea>
                 </div>
             </div>
         </div>
