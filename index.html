@@ -25,11 +25,11 @@
     <title>Joel </title>
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
     <link rel="stylesheet" href="https://icons8.com/icon/61901/swift" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
 <!-- 
@@ -39,39 +39,26 @@ TODO:
 - tags with hover style; active style
 -enhance overall design -->
 
-<body class="bg-gray-100">
-    <nav class="relative flex flex-wrap items-center justify-between px-1 py-5 navbar-expand-lg bg-teal-600 shadow-md">
-        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-            <div class="w-full relative flex justify-between md:w-auto px-4 md:static">
-                <a class="text-3xl leading-normal font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                    href="#Joel">
-                    Joel Godinez
-                </a>
-            </div>
-            <div class="md:flex flex-grow items-center">
-                <ul class="flex flex-col md:flex-row list-none ml-auto">
-                    <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-sm leading-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                            href="#skills">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-sm leading-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                            href="#projects">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="px-3 py-2 flex items-center text-sm leading-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                            href="#contact">
-                            Contact
-                        </a>
-                    </li>
+<body>
+    <!-- NavBar  -->
+    <div class="navbar">
+        <!-- add utility class: flex to allign internal elements -->
+        <div class="container flex">
+            <h1 class="logo">JG</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Skills</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </div>
+
+
+
+
     <section class="bg-teal-500">
         <div class="flex">
             <div class="py-40 md:py-56 text-center flex-1">
@@ -105,7 +92,7 @@ TODO:
     <section class="py-10 px-16" id="projects">
         <div class="container text-center mx-auto">
             <h2 class="text-4xl leading-normal font-bold">Projects</h2>
-            <ul class="inline-flex mx-auto my-6">
+            <ul class="flex inline-flex mx-auto my-6">
                 <li class="mx-2">
                     <span
                         class="tag text-sm leading-normal cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-blue-100 bg-purple-700 uppercase last:mr-0 mr-1">
@@ -151,7 +138,7 @@ TODO:
                 <li class="mx-2">
                     <span
                         class="tag text-sm leading-normal cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-100 uppercase last:mr-0 mr-1 hover:text-blue-200 hover:bg-purple-700">
-                        MySQL
+                        MongoDB
                     </span>
                 </li>
             </ul>

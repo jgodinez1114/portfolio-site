@@ -1,0 +1,111 @@
+/**************************************    style.css    ***********************************************
+*    Programmer:     Joel Godinez
+*   
+*   Purpose:        Develop a resume website to showcase projects using Tailwind CSS and vanilla JavaScript
+*
+*    Environment:    MacOS with Live Server extension
+*
+*    Files included: index.html, style.css, script.js
+*
+*    Estimates                Actuals
+*     Design: 2 hours          2.5 hours
+*     Implementation: 3 hours  4 hours(so far)
+*     Testing:        2 hours  1 hour(so far)
+*
+******************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+/* create a universal reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: rgb(40,40,40);
+    /* spread elements out */
+    line-height: 1.6;
+}
+
+/* remove bullet points */
+ul{
+    list-style-type: none;
+}
+
+/* remove underline in all links */
+a{
+    text-decoration: none;
+    color: rgb(40,40,40);
+}
+
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+
+img{
+    /* keep images within their containing container */
+    width: 100%;
+}
+/* style the navbar */
+.navbar{
+    background-color: rgb(0, 179, 179);
+    color: rgb(255, 255 , 255);
+    height: 80px;
+}
+
+/* enable links to display horizontaly */
+.navbar ul{
+    display: flex;
+}
+/* add spacing between links in .navbar */
+.navbar a{
+    color:rgb(255, 255 , 255);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+/* add a hover effect on links in navbar */
+.navbar a:hover{
+    border-bottom: 3px rgb(255, 255 , 255) solid;
+}
+/* limit the container edges to a pixel amount */
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    /* remove extra space on h1 element within the nav */
+    overflow: auto;
+    /* add pading for small screens  */
+    padding: 0 40px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* convert flex class items to flex elements */
+/* NOTE: flex items have an "main" and a "cross" axis */
+.flex{
+    /* apply flex to flex class */
+    display: flex;
+    /* justify-content always pertains to the main axis */
+    justify-content: center;
+    /* align-items pertains to the cross axis */
+    align-items: center;
+    /* we need to ensure elements occupy their container entirely */
+    height: 100%;
+    /* padding: 40px;
+    margin: 0 50px; */
+}
+
+html{
+    scroll-behavior: smooth;
+    /*background-color: lightgrey;*/
+}
