@@ -16,11 +16,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
+/* define root scope */
+:root{
+    /* define cstom properties (css variables) */
+    --primarycolor:  rgb(0, 179, 179);
+}
+
 /* create a universal reset */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    /*background-color: lightgrey;*/
 }
 
 body{
@@ -56,7 +67,7 @@ img{
 }
 /* style the navbar */
 .navbar{
-    background-color: rgb(0, 179, 179);
+    background-color: var(--primarycolor);
     color: rgb(255, 255 , 255);
     height: 80px;
 }
@@ -76,9 +87,85 @@ img{
 .navbar a:hover{
     border-bottom: 3px rgb(255, 255 , 255) solid;
 }
+/* About Me */
+.aboutme{
+    height: 700px;
+    background-color: var(--primarycolor);
+    color:rgb(255, 255 , 255);
+    position: relative;
+
+}
+
+.aboutme h1{
+    font-size: 40px;
+}
+
+.aboutme p{
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.aboutme .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+
+}
+.contactform{
+    position: relative;
+    /* top: 60px; */
+    height: 100%;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+
+}
+/* add spacing between the form elements */
+.contactform .formcontrol{
+  margin: 30px;
+}
+
+/* target the input elements */
+.contactform input[type='text'],
+.contactform input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid rgb(180, 190, 203);
+    /* extend the form inputs across the card */
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+/* remove border when clicking an input */
+.contactform input:focus{
+    outline: none;
+}
+
+/* add slant effect below aboutme section */
+.aboutme::before,
+.aboutme::after{
+    /* NOTE: content is required for pseudo elements sudch as ::before */
+    content:'';
+    position: absolute;
+    height: 100px;
+    bottom: -90px;
+    right: 0;
+    left: 0;
+    background:rgb(255, 255 , 255);
+    transform: skewY(-2deg);
+
+    /* add prefix versions of the above for compatibility w/ other browsers */
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+
+}
+
+
+/* Utilities (classes used throughout the site */
 /* limit the container edges to a pixel amount */
 .container{
-    max-width: 1600px;
+    max-width: 1300px;
     margin: 0 auto;
     /* remove extra space on h1 element within the nav */
     overflow: auto;
@@ -89,6 +176,40 @@ img{
 .navbar .flex{
     justify-content: space-between;
 }
+
+.card{
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    /* horizoffsett vertoffset blur color */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    /* activate cursor on hover */
+    cursor: pointer;
+    background: rgb(180, 190, 203);
+    color:rgb(255, 255 , 255);
+    border: none;
+    border-radius: 5px;
+}
+
+/* add a hover effect */
+.btn:hover {
+    transform: scale(.97);
+}
+
+ .contact .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0px;
+
+}
+
+
 
 /* convert flex class items to flex elements */
 /* NOTE: flex items have an "main" and a "cross" axis */
@@ -105,7 +226,14 @@ img{
     margin: 0 50px; */
 }
 
-html{
-    scroll-behavior: smooth;
-    /*background-color: lightgrey;*/
+/* set global styles for grid class elements */
+.grid{
+    display: grid;
+    /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(2, 1fr);*/
+    grid-template-columns: 1fr 1fr;
+    /* add a gap in between columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }

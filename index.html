@@ -58,35 +58,42 @@ TODO:
 
 
 
-
-    <section class="bg-teal-500">
-        <div class="flex">
-            <div class="py-40 md:py-56 text-center flex-1">
+    <!-- aboutme -->
+    <section class="aboutme bg-teal-500">
+        <div class="container grid">
+            <div class=" aboutmetext py-40 md:py-56 text-center flex-1">
                 <h1 class="text-4xl leading-normal text-white">Hi, Joel here! 👋 </h1>
                 <p class="text-2xl leading-normal text-white">I am a computer engineer and proud member of AIAA and
                     IEEE.</p>
             </div>
-            <div class="flex-1">
-                <img class="w-full h-full object-cover" src="joel-snow.jpg" alt="Joel Godinez" />
+            <div class="aboutmepic flex-1">
+                <img class="w-full h-full object-cover" src="img/joel-snow.jpg" alt="Joel Godinez" />
             </div>
         </div>
     </section>
-
-    <section class="py-10 px-16" id="skills">
-        <div class="container text-center mx-auto">
-            <h2 class="text-4xl leading-normal font-bold">Skills</h2>
-            <div class="container text-center mx-auto px-4">
-                <ul class="flex w-full">
-                    <li class="flex-1 text-6xl leading-normal text-blue-500"><i class="fab fa-python"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-black-800"><i class="fab fa-linux"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-red-700"><i class="fab fa-raspberry-pi"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-red-700"><i class="fab fa-git-alt"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-yellow-500"><i class="fab fa-js"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-blue-400"><i class="fab fa-twitter-square"></i></li>
-                    <li class="flex-1 text-6xl leading-normal text-purple-500"><i class="fas fa-database"></i></li>
-                </ul>
-            </div>
-        </div>
+<!-- skills -->
+    <section class="skills py-10 px-16" id="skills">
+      <div class="container">
+          <h3 class="skillsheading textcenter my-1">
+              Skills
+          </h3>
+          <div class="container textcenter my-4">
+              <div>
+                  <ul>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                      <li class="fa-3x"></li>
+                  </ul>
+                  <i class="fa-3x"></i>
+              </div>
+          </div>
+      </div>
     </section>
 
     <section class="py-10 px-16" id="projects">
@@ -165,35 +172,33 @@ TODO:
             </div>
         </div>
     </section>
-    <section class="py-10 px-16" id="contact">
-        <div class="container text-center mx-auto">
-            <h2 class="text-4xl leading-normal font-bold">Contact</h2>
-            <div class="bg-teal-600 p-4 rounded shadow-md text-left my-4">
-                <div class="flex">
-                    <div class="mb-3 mr-2 pt-0 flex-1">
-                        <!--Note: Margin bottom (mb) does not work on inline elements. Use 'inline-block'-->
-                        <label class="text-lg leading-normal text-white inline-block mb-2">Name:</label>
-                        <!--Deleted a repeated background class attribute, removed 'relative' attri 
-                        which controls how an element is positioned in the DOM-->
-                        <input type="text" placeholder="Name"
-                            class="px-3 py-3 placeholder-gray200 text-gray-700 bg-white rounded text-md leading-normal shadow outline-none focus:outline-none focus:ring w-full" />
+    <section class="contact py-10 px-16" id="contact">
+        <div class="container grid">
+            <div class="blank"></div>
+            <div class="contactform card">
+                <h2 class="">Contact</h2>
+                <form>
+                    <!-- require inputs by adding the keyword on the end -->
+                    <div class="formcontrol">
+                        <input type="text" name="name" placeholder="Name" required>
                     </div>
-                    <div class="mb-3 ml-2 pt-0 flex-1">
-                        <label class="text-lg leading-normal text-white inline-block mb-2">Email:</label>
-                        <input type="email" placeholder="Email"
-                            class="px-3 py-3 placeholder-gray-500 text-gray-700 bg-white rounded text-md leading-normal shadow outline-none focus:outline-none focus:ring w-full" />
+                    <div class="formcontrol">
+                        <input type="email" name="text" placeholder="Email" required>
                     </div>
-                </div>
-                <div class="mb-3 pt-0">
-                    <label class="text-lg text-white inline-block mb-2">Message:</label>
-                    <textarea placeholder="Message"
-                        class="px-3 py-3 placeholder-gray-500 text-gray-700 bg-white rounded text-md leading-normal shadow outline-none focus:outline-none focus:ring w-full"></textarea>
-                </div>
+                    <div class="formcontrol message">
+                        <input type="text" name="email" placeholder="Message" required>
+                    </div>
+                    <!-- on a button, value defines the text on it -->
+                    <input type="submit" value="Send" class="btn btnprimary">
+                </form>
             </div>
+            <div class="blank"></div>
         </div>
+
+
     </section>
 
-    <footer class="bg-teal-600 text-center py-6">
+    <footer class="container bg-teal-600 text-center py-6">
         <p class="text-lg leading-normal text-white">
             Handcrafted by <span class="font-bold">Joel Godinez</span> in Texas
         </p>
