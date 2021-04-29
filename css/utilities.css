@@ -30,7 +30,16 @@
     background: rgb(180, 190, 203);
     color:rgb(255, 255 , 255);
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+.btnprimary{
+    margin: 0;
+    position: absolute;
+    /* top: 80%; */
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 }
 
 /* add a hover effect */
