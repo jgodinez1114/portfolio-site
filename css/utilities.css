@@ -78,3 +78,35 @@
      /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(2, 1fr);*/
      grid-template-columns: repeat(11, 1fr);
 }
+.grid-8{
+     /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(8, 1fr);*/
+     grid-template-columns: repeat(8, 1fr);
+}
+
+/* Margin */
+.my-1{
+    /* rem uses a multiplier of the root element's font size */
+    /* NOTE: html default font size is 16 */
+    margin: 1rem 0;
+}
+.my-2{
+    /* rem uses a multiplier of the root element's font size */
+    /* NOTE: html default font size is 16 */
+    margin: 2rem 0;
+}
+.my-3{
+    /* rem uses a multiplier of the root element's font size */
+    /* NOTE: html default font size is 16 */
+    margin: 3rem 0;
+}
+.my-4{
+    /* rem uses a multiplier of the root element's font size */
+    /* NOTE: html default font size is 16 */
+    margin: 4rem 0;
+}
+.my-5{
+    /* rem uses a multiplier of the root element's font size */
+    /* NOTE: html default font size is 16 */
+    margin: 5rem 0;
+}
+
