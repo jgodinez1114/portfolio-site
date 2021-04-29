@@ -1,0 +1,80 @@
+/* Utilities (classes used throughout the site */
+/* limit the container edges to a pixel amount */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    /* remove extra space on h1 element within the nav */
+    overflow: auto;
+    /* add pading for small screens  */
+    padding: 0 40px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.card{
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    /* horizoffsett vertoffset blur color */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    /* activate cursor on hover */
+    cursor: pointer;
+    background: rgb(180, 190, 203);
+    color:rgb(255, 255 , 255);
+    border: none;
+    border-radius: 5px;
+}
+
+/* add a hover effect */
+.btn:hover {
+    transform: scale(.97);
+}
+
+ .contact .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0px;
+
+}
+
+
+
+/* convert flex class items to flex elements */
+/* NOTE: flex items have an "main" and a "cross" axis */
+.flex{
+    /* apply flex to flex class */
+    display: flex;
+    /* justify-content always pertains to the main axis */
+    justify-content: center;
+    /* align-items pertains to the cross axis */
+    align-items: center;
+    /* we need to ensure elements occupy their container entirely */
+    height: 100%;
+    /* padding: 40px;
+    margin: 0 50px; */
+}
+
+/* set global styles for grid class elements */
+.grid{
+    display: grid;
+    /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(2, 1fr);*/
+    grid-template-columns: 1fr 1fr;
+    /* add a gap in between columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-11{
+     /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(2, 1fr);*/
+     grid-template-columns: repeat(11, 1fr);
+}
