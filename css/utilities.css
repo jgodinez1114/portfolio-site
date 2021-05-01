@@ -30,7 +30,7 @@
     background: rgb(180, 190, 203);
     color:rgb(255, 255 , 255);
     border: none;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 .btnprimary{
@@ -101,23 +101,19 @@
     margin: 1rem 0;
 }
 .my-2{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 1.5rem 0;
 }
 .my-3{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 2rem 0;
 }
 .my-4{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 3rem 0;
 }
 .my-5{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 4rem 0;
 }
 
@@ -128,53 +124,46 @@
     margin: 1rem;
 }
 .m-2{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 1.5rem;
 }
 .m-3{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+ 
     margin: 2rem;
 }
 .m-4{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 3rem;
 }
 .m-5{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     margin: 4rem;
 }
 
 
 /* Padding */
 
-/* top, bottom margins */
+ /* top, bottom margins */
+ /* rem uses a multiplier of the root element's font size */
+ /* NOTE: html default font size is 16 */
 .py-1{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 1rem 0;
 }
 .py-2{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 1.5rem 0;
 }
 .py-3{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 2rem 0;
 }
 .py-4{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 3rem 0;
 }
 .py-5{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 4rem 0;
 }
 
@@ -185,22 +174,18 @@
     padding: 1rem;
 }
 .p-2{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 1.5rem;
 }
 .p-3{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 2rem;
 }
 .p-4{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+
     padding: 3rem;
 }
 .p-5{
-    /* rem uses a multiplier of the root element's font size */
-    /* NOTE: html default font size is 16 */
+ 
     padding: 4rem;
 }

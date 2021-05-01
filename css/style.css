@@ -20,6 +20,7 @@
 :root{
     /* define cstom properties (css variables) */
     --primarycolor:  rgb(0, 179, 179);
+     /* pantone blue: rgba(63,67,138,255) */
 }
 
 /* create a universal reset */
@@ -67,7 +68,7 @@ img{
 }
 /* style the navbar */
 .navbar{
-    background-color: var(--primarycolor);
+    background-color: rgb(1,137,137);
     color: rgb(255, 255 , 255);
     height: 80px;
 }
