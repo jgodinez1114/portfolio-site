@@ -32,6 +32,8 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
+    box-sizing: border-box;
     /*background-color: lightgrey;*/
 }
 
@@ -63,7 +65,7 @@ p{
 }
 
 img{
-    /* keep images within their containing container */
+    /* keep images within their container */
     width: 100%;
 }
 /* style the navbar */
@@ -97,18 +99,23 @@ img{
 
 }
 
+.aboutme .aboutmetext .aboutmeblurb{
+    max-width: 600px;
+    font-size: 1.5rem;
+  }
+
 .imgprofile{
     border-radius: 50px;
     box-shadow: 0 15px 10px rgba(0,0,0,0.3);
 }
 
 .aboutme h1{
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 .aboutme p{
     margin: 20px 0;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .aboutme .grid{
@@ -139,7 +146,7 @@ img{
     /* extend the form inputs across the card */
     width: 100%;
     padding: 3px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* remove border when clicking an input */
@@ -171,3 +178,22 @@ img{
     padding-top: 120px;
 }
 
+.skills .skillsheading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* projects */
+.projects .projectsheading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* center the footer paragraph */
+footer p{
+    /* max-width: 500px; */
+    float: left;
+    width: 100%;
+    text-align: center;
+}

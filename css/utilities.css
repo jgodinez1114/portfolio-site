@@ -167,7 +167,7 @@
     padding: 4rem 0;
 }
 
-/* 4 sided margins */
+/* 4 sided padding */
 .p-1{
     /* rem uses a multiplier of the root element's font size */
     /* NOTE: html default font size is 16 */
