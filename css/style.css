@@ -190,6 +190,11 @@ img{
     font-weight: bold;
 }
 
+.projects .grid span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* center the footer paragraph */
 footer p{
     /* max-width: 500px; */
