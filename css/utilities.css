@@ -91,6 +91,10 @@
      /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(8, 1fr);*/
      grid-template-columns: repeat(8, 1fr);
 }
+.grid-6{
+     /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(8, 1fr);*/
+     grid-template-columns: repeat(6, 1fr);
+}
 
 /* Margin */
 
