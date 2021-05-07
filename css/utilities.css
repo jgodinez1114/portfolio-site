@@ -83,6 +83,11 @@
     height: 100%;
 }
 
+.grid-2{
+    /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(8, 1fr);*/
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-11{
      /* keep  proportions as 1:1 aka 1fr 1fr aka repeat(2, 1fr);*/
      grid-template-columns: repeat(11, 1fr);
