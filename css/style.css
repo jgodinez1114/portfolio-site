@@ -68,6 +68,12 @@ img{
     /* keep images within their container */
     width: 100%;
 }
+
+body{
+    background-image: url('../img/mountain-white-1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
 /* style the navbar */
 .navbar{
     background-color: rgb(1,137,137);
@@ -212,6 +218,7 @@ footer p{
   max-width: 100rem;
   width: 100%;
   text-align: center;
+  background-color: rgba(255, 255, 255, .9);
   border-radius: 7px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
@@ -232,7 +239,7 @@ footer p{
     left: 0;
     width: 100%;
   }
-  
+
   .projectcard img{
     max-width: 100%;
     vertical-align: top;
