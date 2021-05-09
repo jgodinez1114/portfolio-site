@@ -19,7 +19,7 @@
 /* define root scope */
 :root{
     /* define cstom properties (css variables) */
-    --primarycolor:  rgb(0, 179, 179);
+    --primarycolor:  rgba(50, 179, 179, .8);
      /* pantone blue: rgba(63,67,138,255) */
 }
 
@@ -55,8 +55,14 @@ a{
     color: rgb(40,40,40);
 }
 
-h1, h2{
-    font-weight: 300;
+h1{
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h2{
+    font-weight: 700;
     line-height: 1.2;
     margin: 10px 0;
 }
@@ -81,6 +87,10 @@ body{
     height: 80px;
 }
 
+/* .topsection {
+    height: 100%;
+} */
+
 /* enable links to display horizontaly */
 .navbar ul{
     display: flex;
@@ -90,6 +100,7 @@ body{
     color:rgb(255, 255 , 255);
     padding: 10px;
     margin: 0 5px;
+    font-size: 1.5rem;
 }
 
 /* add a hover effect on links in navbar */
@@ -170,7 +181,7 @@ body{
     bottom: -90px;
     right: 0;
     left: 0;
-    background:rgb(255, 255 , 255);
+    background:rgba(255, 255 , 255, 1);
     transform: skewY(-2deg);
 
     /* add prefix versions of the above for compatibility w/ other browsers */
