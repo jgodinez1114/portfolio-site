@@ -172,6 +172,7 @@ body{
 /* add spacing between the form elements */
 .contactform .formcontrol{
   margin: 30px;
+
 }
 
 /* target the input elements */
@@ -188,6 +189,33 @@ body{
 /* remove border when clicking an input */
 .contactform input:focus{
     outline: none;
+}
+
+.contactform h2{
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+    letter-spacing: .3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contactform textarea{
+    /* remove outline on click event */
+    outline: none;
+    /* disable resize function */
+    resize: none;
+    justify-content: center;
+    /* remove default scrolls in IE */
+    overflow: auto;
+    width: 100%;
+    /* Safari/Chrome webkit */
+    -webkit-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    -moz-box-sizing: border-box;
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
 }
 
 /* add slant effect below aboutme section */
