@@ -159,64 +159,6 @@ body{
     gap: 30px;
 
 }
-.contactform{
-    position: relative;
-    /* top: 60px; */
-    /* height: 100%; */
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-    justify-self: flex-end;
-
-}
-/* add spacing between the form elements */
-.contactform .formcontrol{
-  margin: 30px;
-
-}
-
-/* target the input elements */
-.contactform input[type='text'],
-.contactform input[type='email'] {
-    border: 0;
-    border-bottom: 1px solid rgb(180, 190, 203);
-    /* extend the form inputs across the card */
-    width: 100%;
-    padding: 3px;
-    font-size: 1rem;
-}
-
-/* remove border when clicking an input */
-.contactform input:focus{
-    outline: none;
-}
-
-.contactform h2{
-    font-size: 2vw;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 10px 0;
-    letter-spacing: .3rem;
-    text-align: center;
-    justify-content: center;
-}
-
-.contactform textarea{
-    /* remove outline on click event */
-    outline: none;
-    /* disable resize function */
-    resize: none;
-    justify-content: center;
-    /* remove default scrolls in IE */
-    overflow: auto;
-    width: 100%;
-    /* Safari/Chrome webkit */
-    -webkit-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    -moz-box-sizing: border-box;
-    /* Opera/IE 8+ */
-    box-sizing: border-box;
-}
 
 /* add slant effect below aboutme section */
 .aboutme::before,
@@ -230,12 +172,12 @@ body{
     left: 0;
     background:rgba(255, 255, 255, 1);
     transform: skewY(-2deg);
-
+    
     /* add prefix versions of the above for compatibility w/ other browsers */
     -webkit-transform: skewY(-2deg);
     -moz-transform: skewY(-2deg);
     -ms-transform: skewY(-2deg);
-
+    
 }
 /* Skills************************************************* */
 .skills {
@@ -255,8 +197,8 @@ body{
 }
 
 .projects .grid span{
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* center the footer paragraph */
@@ -296,9 +238,9 @@ footer p{
     bottom: 0;
     left: 0;
     width: 100%;
-  }
+}
 
-  .projectcard img{
+.projectcard img{
     max-width: 100%;
     vertical-align: top;
     position: relative;
@@ -307,12 +249,76 @@ footer p{
   .tech{
       float: left;
   }
-
+  
   .team{
       float:right;
-  }
+    }
+    
+    
+    /* .tech .team{
+        display: flex;
+    } */
+    
+    .contactform{
+        position: relative;
+        /* top: 60px; */
+        /* height: 100%; */
+        width: 400px;
+        padding: 40px;
+        z-index: 100;
+        justify-self: flex-end;
+        justify-content: center;
+    }
+    /* center the contact form horizontally */
+    .center .contactform{
+        margin: auto;
+    }
+    /* add spacing between the form elements */
+    .contactform .formcontrol{
+      margin: 30px;
+      
+    }
 
-
-/* .tech .team{
-    display: flex;
-} */
+    
+    /* target the input elements */
+    .contactform input[type='text'],
+    .contactform input[type='email'] {
+        border: 0;
+        border-bottom: 1px solid rgb(180, 190, 203);
+        /* extend the form inputs across the card */
+        width: 100%;
+        padding: 3px;
+        font-size: 1rem;
+    }
+    
+    /* remove border when clicking an input */
+    .contactform input:focus{
+        outline: none;
+    }
+    
+    .contactform h2{
+        font-size: 2vw;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 10px 0;
+        letter-spacing: .3rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .contactform textarea{
+        /* remove outline on click event */
+        outline: none;
+        /* disable resize function */
+        resize: none;
+        justify-content: center;
+        /* remove default scrolls in IE */
+        overflow: auto;
+        width: 100%;
+        /* Safari/Chrome webkit */
+        -webkit-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        -moz-box-sizing: border-box;
+        /* Opera/IE 8+ */
+        box-sizing: border-box;
+    }
