@@ -7,6 +7,13 @@
 *
 *    Files included: index.html, style.css, script.js
 *
+*    New proposed pallete: /* SCSS RGB */
+/* $honeydew: rgba(241, 255, 231, 1);
+$mint-green: rgba(169, 253, 172, 1);
+$emerald: rgba(68, 207, 108, 1);
+$zomp: rgba(50, 162, 135, 1);
+$eggplant: rgba(108, 70, 78, 1); 
+*
 *    Estimates                Actuals
 *     Design: 2 hours          2.5 hours
 *     Implementation: 3 hours  4 hours(so far)
@@ -39,7 +46,7 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
-    color: rgb(40,40,40);
+    color: rgba(108, 70, 78, 1);
     /* spread elements out */
     line-height: 1.6;
 }
@@ -83,21 +90,23 @@ body{
 /* style the navbar */
 .navbar{
     background-color: rgb(1,137,137);
-    color: rgb(255, 255 , 255);
+    color: (241, 255, 231, 1);
     height: 80px;
 }
 
 /* .topsection {
     height: 100%;
 } */
-
+.navbar h1{
+    color:rgba(241, 255, 231, 1);
+}
 /* enable links to display horizontaly */
 .navbar ul{
     display: flex;
 }
 /* add spacing between links in .navbar */
 .navbar a{
-    color:rgb(255, 255 , 255);
+    color:rgba(241, 255, 231, 1);
     padding: 10px;
     margin: 0 5px;
     font-size: 1.5rem;
@@ -105,13 +114,13 @@ body{
 
 /* add a hover effect on links in navbar */
 .navbar a:hover{
-    border-bottom: 3px rgb(255, 255 , 255) solid;
+    border-bottom: 3px rgba(169, 253, 172, 1) solid;
 }
 /* About Me ****************************************/
 .aboutme{
     height: 700px;
     background-color: var(--primarycolor);
-    color:rgb(255, 255 , 255);
+    color:rgba(241, 255, 231, 1);
     position: relative;
 
 }
@@ -181,7 +190,7 @@ body{
     bottom: -90px;
     right: 0;
     left: 0;
-    background:rgba(255, 255 , 255, 1);
+    background:rgba(255, 255, 255, 1);
     transform: skewY(-2deg);
 
     /* add prefix versions of the above for compatibility w/ other browsers */
@@ -229,7 +238,7 @@ footer p{
   max-width: 100rem;
   width: 100%;
   text-align: center;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(241, 255, 231, .3);
   border-radius: 7px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
