@@ -314,30 +314,33 @@ TODO:
 
     <!-- new contact -->
     <section class="" id="contact">
-        <div class="container contactwrapper">
-            <h2 class="letsbuildheader">Let's build together</h2>
+        <h2 class="letsbuildheader">Let's build together</h2>
+        <div class="contactwrapper">
             <form action="POST" data-netlify="true" id="contactform" class="formhorizontal" role="form">
                 <div class="formgroup">
                     <!-- <div class="flex"> -->
                     <div class="col-sm-12">
-                        <label for="">Name</label>
-                        <input class="formcontrol" type="text" name="name" placeholder="Name" required>
+                        <!-- <label for="">Name</label> -->
+                        <input class="formcontrol" id="name" type="text" name="name" placeholder="Name" value=""
+                            required>
                     </div>
                 </div>
+
                 <div class="formgroup">
-                    <div class="flexauto formgroup">
-                        <label for="">Email</label>
-                        <input class="formcontrol" type="email" name="email" placeholder="Email" required>
+                    <div class="col-sm-12">
+                        <!-- <label for="">Email</label> -->
+                        <input class="formcontrol" id="email" type="email" name="email" placeholder="Email" value=""
+                            required>
                     </div>
                 </div>
                 <!-- </div> -->
 
-                <label for="">Message</label>
-                <textarea class="formcontrol" name="message" id="message" placeholder="Message" rows="7" required>
+                <!-- <label for="">Message</label> -->
+                <textarea class="formcontrol" rows="10" name="message" id="message" placeholder="Message" required>
                 </textarea>
 
 
-                <div class="formgroup field">
+                <div class="formgroup">
                     <div data-netlify-recaptcha="true"></div>
                 </div>
                 <button class="btn btnprimary sendbtn" id="submit" type="submit" value="SEND">
@@ -347,9 +350,8 @@ TODO:
                     <!-- <div class="formgroup"><ul class="actions">
                 <li><i class="fas fa-paper-plane"></i><input type="submit" value="Send Message"class="sendbtn btn btnprimary formcontrol"></li>
             </ul> -->
+                </button>
             </form>
-
-
         </div>
     </section>
 
