@@ -253,50 +253,120 @@ footer p{
   .team{
       float:right;
     }
+
+    .contactwrapper{
+        margin:0;
+        padding-top: 20px;
+        position: relative;
+        max-width: 800px;
+    }
+
+    .letsbuildheader{
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        letter-spacing: 2px;
+    }
+
+    .formcontrol, textarea{
+      max-width: 400px;
+      background-color: aliceblue;
+      color: #000;
+      letter-spacing: 1px;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        overflow: hidden;
+    }
+
+    .letsbuildheader{
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        color:rgb(23, 37, 255);
+    }
+
+    /* cednter the contact form */
+    .contactwrapper{
+        margin: 0 auto;
+        padding-top: 20px;
+        position: relative;
+        max-width: 800px;
+    }
+
+    .formcontrol, textarea{
+        max-width: 400px;
+        background-color: #000;
+        letter-spacing: 1px;
+    }
+
+    .sendbtn{
+        margin-top: 15px;
+        height: 34px;
+        width: 400px;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn{
+        width: 400px;
+        height: 34px;
+        transition: all .2s ease-in-out;
+    }
+
+    
+
+
+
+
+
     
     
     /* .tech .team{
         display: flex;
     } */
-    
+/*     
     .contactform{
-        position: relative;
+        position: relative; */
         /* top: 60px; */
         /* height: 100%; */
-        width: 400px;
+        /* width: 400px;
         padding: 40px;
         z-index: 100;
         justify-self: flex-end;
         justify-content: center;
-    }
+    } */
     /* center the contact form horizontally */
-    .center .contactform{
+    /* .center .contactform{
         margin: auto;
-    }
+    } */
     /* add spacing between the form elements */
-    .contactform .formcontrol{
+    /* .contactform .formcontrol{
       margin: 30px;
       
-    }
+    } */
 
     
     /* target the input elements */
-    .contactform input[type='text'],
+    /* .contactform input[type='text'],
     .contactform input[type='email'] {
         border: 0;
-        border-bottom: 1px solid rgb(180, 190, 203);
+        border-bottom: 1px solid rgb(180, 190, 203); */
         /* extend the form inputs across the card */
-        width: 100%;
+        /* width: 100%;
         padding: 3px;
         font-size: 1rem;
-    }
+    } */
     
     /* remove border when clicking an input */
-    .contactform input:focus{
+    /* .contactform input:focus{
         outline: none;
-    }
+    } */
     
-    .contactform h2{
+    /* .contactform h2{
         font-size: 2vw;
         font-weight: 700;
         line-height: 1.2;
@@ -304,21 +374,38 @@ footer p{
         letter-spacing: .3rem;
         text-align: center;
         justify-content: center;
-    }
+    } */
     
-    .contactform textarea{
+    /* .contactform textarea{ */
         /* remove outline on click event */
-        outline: none;
+        /* outline: none; */
         /* disable resize function */
-        resize: none;
-        justify-content: center;
+        /* resize: none; */
+        /* justify-content: center; */
         /* remove default scrolls in IE */
-        overflow: auto;
-        width: 100%;
+        /* overflow: auto; */
+        /* width: 100%; */
         /* Safari/Chrome webkit */
-        -webkit-box-sizing: border-box;
+        /* -webkit-box-sizing: border-box; */
         /* Firefox, other Gecko */
-        -moz-box-sizing: border-box;
+        /* -moz-box-sizing: border-box; */
         /* Opera/IE 8+ */
+        /* box-sizing: border-box; */
+    /* } */
+
+    /* .sendbtn {
+        height: 3em;
+        width: 100%;
+        color:rgb(180, 190, 203);
         box-sizing: border-box;
     }
+
+    .sendbtn:hover {
+        background: rgb(180, 190, 203);
+        color:rgba(169, 253, 172, 1);
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: inset 5rem 0 0 5rem pink;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;  
+    } */
