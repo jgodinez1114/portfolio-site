@@ -38,7 +38,7 @@ TODO:
 - tags with hover style; active style
 -enhance overall design -->
 
-<body>
+<body id="wrapper">
     <!-- NavBar  -->
     <div class="navbar">
         <!-- add utility class: flex to allign internal elements -->
@@ -284,6 +284,7 @@ TODO:
         <!-- </div> -->
         </div>
     </section>
+    <!-- end Projects -->
 
     <!-- <section class="contact" id="contact">
         <div class="container grid py-5">
@@ -357,11 +358,49 @@ TODO:
             </form>
         </div>
     </section> -->
-    <div class="container flex grid-3">
+
+    <section clas="container grid flex">
+        <header>
+            <h2>Get in touch</h2>
+        </header>
+        <div class="content">
+            <p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+            <form action="POST" data-netlify="true">
+                <div class="fields">
+                    <div class="field half">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="field half">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="7" columns="1"></textarea>
+                    </div>
+                    <div class="field">
+                        <input type="file" name="myfile" class="button primary" id="myfile" placeholder="Upload File"
+                            rows="7" />
+                    </div>
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="button primary" /></li>
+                </ul>
+            </form>
+        </div>
+
+    </section>
+
+
+
+    <!-- sample button with inner icon -->
+    <div class="container btn flex sendbtn">
         <a href=" index.html" class="btn btnprimary" id="linkhome">
             <span class="fas fa-basketball-ball"></span>
-            <span class="btncolor">TEst</span>
-            <span class="aokhidden">Choose</span>
+            <span class="">Ok, </span>
+            <span class="">this is a long string</span>
         </a>
     </div>
 
