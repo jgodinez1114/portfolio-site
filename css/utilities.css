@@ -43,9 +43,9 @@
 }
 
 /* add a hover effect */
-.btn:hover {
+/* .btn:hover {
     transform: scale(.97);
-}
+} */
 
  .contact .grid{
     display: grid;

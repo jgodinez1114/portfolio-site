@@ -322,9 +322,51 @@ footer p{
         letter-spacing: 2px;
     }
 
-    .btn:hover{
+    /* .btn:hover{
         transform: translate3d(0px, -40px, 0px);
+    } */
+
+    /* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+    .container, .formhorizontal {
+      float: none;
+      margin: 10px auto;
+    }  
+    .container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+
+  }
+  
+  @media screen and (max-width: 569px) {
+  
+    .container{
+      float: none;
+      margin: 0 auto;
+    }  
+    .formcontrol, textarea {
+      max-width: 340px;
+      margin: 0 auto;
     }
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .sendbtn {
+      width: 99%;
+    }
+  }
 
 
 
