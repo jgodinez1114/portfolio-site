@@ -359,7 +359,7 @@ TODO:
         </div>
     </section> -->
 
-    <section clas="container grid flex">
+    <section clas="container grid flex" id="contact">
         <header>
             <h2>Get in touch</h2>
         </header>
@@ -378,7 +378,7 @@ TODO:
                         <textarea name="message" id="message" placeholder="Message" rows="7" columns="1"></textarea>
                     </div>
                     <div class="field">
-                        <input type="file" name="myfile" class="button primary" id="myfile" placeholder="Upload File"
+                        <input type="file" name="myfile" class="btn primary" id="myfile" placeholder="Upload File"
                             rows="7" />
                     </div>
                     <div class="field">
@@ -386,7 +386,7 @@ TODO:
                     </div>
                 </div>
                 <ul class="actions">
-                    <li><input type="submit" value="Send Message" class="button primary" /></li>
+                    <li><input id="sendmessage" type="submit" value="Send Message" class="btn primary" /></li>
                 </ul>
             </form>
         </div>
@@ -396,18 +396,35 @@ TODO:
 
 
     <!-- sample button with inner icon -->
-    <div class="container btn flex sendbtn">
+    <!-- <div class="container btn flex sendbtn">
         <a href=" index.html" class="btn btnprimary" id="linkhome">
             <span class="fas fa-basketball-ball"></span>
             <span class="">Ok, </span>
             <span class="">this is a long string</span>
         </a>
-    </div>
+    </div> -->
 
-    <footer class="container">
-        <p class="authoredby">
-            Handcrafted by <span class="">Joel Godinez</span> in Texas
-        </p>
+    <footer class="footer container py-5">
+        <div class="container grid grid-3">
+            <div>
+                <p class="authoredby">
+                    Handcrafted by Joel Godinez &copy; Troy Anthony Media
+                </p>
+            </div>
+            <nav class="naviagation">
+                <ul>
+                    <li><a href="index.html"></a></li>
+                    <li><a href="index.html"></a></li>
+                    <li><a href="index.html"></a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-angellist fa-2x"></i></a>
+                <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

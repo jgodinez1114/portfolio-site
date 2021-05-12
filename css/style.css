@@ -64,19 +64,20 @@ body{
     max-width: 60rem;
     position: relative;
 }
-#wrapper > section > .content > section {
+/* #wrapper > section > .content > section {
     position: relative;
-}
-    #wrapper > section > .content > section:first-child {
+} */
+    /* #wrapper > section > .content > section:first-child {
         margin-top: 6rem;
-    }
+    } */
 /*  yes*/
 #wrapper section > .content {
     padding: 0 5rem;
+    margin: 0 auto;
 }
-#wrapper > section > .content > section {
+/* #wrapper > section > .content > section {
 left: calc(-50vw - 5rem);
-}
+} */
 
 /*  yes*/
 body, input, select, textarea {
@@ -288,14 +289,14 @@ footer p{
     height: 100vh;
 } */
 
-#contact{
+/* #contact{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: var(--primarycolor);
     overflow: hidden;
-}
+} */
 
 .letsbuildheader{
     text-align: center;
@@ -325,9 +326,13 @@ footer p{
  }
     .formcontrol, textarea{
       max-width: 800px;
-      background-color: rgb(255, 247, 240);
+      background-color: rgb(253, 253, 252);
       color: #000;
       letter-spacing: 1px;
+    }
+
+    form > div > input {
+        outline: red;
     }
 
     .sendbtn{
@@ -488,7 +493,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-.button {
+.btn {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -521,7 +526,7 @@ button,
     input[type="reset"]:hover,
     input[type="button"]:hover,
     button:hover,
-    .button:hover {
+    .btn:hover {
         box-shadow: inset 0 0 0 2px #2ee4bb;
         color: #2ee4bb !important;
     }
@@ -530,7 +535,7 @@ button,
     input[type="reset"]:active,
     input[type="button"]:active,
     button:active,
-    .button:active {
+    .btn:active {
         background-color: rgba(73, 252, 212, 0.25);
         box-shadow: inset 0 0 0 2px #2ee4bb;
         color: #2ee4bb !important;
@@ -540,7 +545,7 @@ button,
     input[type="reset"].small,
     input[type="button"].small,
     button.small,
-    .button.small {
+    .btn.small {
         font-size: 0.5rem;
         height: 2.25rem;
         line-height: 2.25rem;
@@ -551,7 +556,7 @@ button,
     input[type="reset"].large,
     input[type="button"].large,
     button.large,
-    .button.large {
+    .btn.large {
         font-size: 0.7rem;
         height: 3.2625rem;
         line-height: 3.2625rem;
@@ -562,7 +567,7 @@ button,
     input[type="reset"].wide,
     input[type="button"].wide,
     button.wide,
-    .button.wide {
+    .btn.wide {
         min-width: 13rem;
     }
 
@@ -570,7 +575,7 @@ button,
     input[type="reset"].icon:before,
     input[type="button"].icon:before,
     button.icon:before,
-    .button.icon:before {
+    .btn.icon:before {
         margin-right: 0.5rem;
     }
 
@@ -578,7 +583,7 @@ button,
     input[type="reset"].fit,
     input[type="button"].fit,
     button.fit,
-    .button.fit {
+    .btn.fit {
         width: 100%;
     }
 
@@ -589,8 +594,8 @@ button,
     input[type="button"]:disabled,
     button.disabled,
     button:disabled,
-    .button.disabled,
-    .button:disabled {
+    .btn.disabled,
+    .btn:disabled {
         pointer-events: none;
         opacity: 0.25;
     }
@@ -599,7 +604,7 @@ button,
     input[type="reset"].primary,
     input[type="button"].primary,
     button.primary,
-    .button.primary {
+    .btn.primary {
         background-color: #49fcd4;
         box-shadow: none;
         color: #000000 !important;
@@ -609,7 +614,7 @@ button,
         input[type="reset"].primary:hover,
         input[type="button"].primary:hover,
         button.primary:hover,
-        .button.primary:hover {
+        .btn.primary:hover {
             background-color: #93ffe7;
         }
 
@@ -617,7 +622,7 @@ button,
         input[type="reset"].primary:active,
         input[type="button"].primary:active,
         button.primary:active,
-        .button.primary:active {
+        .btn.primary:active {
             background-color: #44f2cb;
         }
 
@@ -785,3 +790,10 @@ width: 5rem;
 	padding: 0.75rem 1rem;
     resize: none;
 	}
+
+    #sendmessage{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        max-width: 400px;
+    }
