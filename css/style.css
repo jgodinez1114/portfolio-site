@@ -27,7 +27,11 @@ $eggplant: rgba(108, 70, 78, 1);
 :root{
     /* define cstom properties (css variables) */
     --primarycolor:  rgba(50, 179, 179, .8);
+    --secondarycolor:  rgba(	255, 221, 74,1);
+    --darkcolor:  rgba(46, 49, 49, 1);
+    --lightcolor:  rgba(50, 179, 179, .8);
      /* pantone blue: rgba(63,67,138,255) */
+    
 }
 
 /* create a universal reset */
@@ -51,7 +55,7 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
-    color: rgb(23, 37, 42);
+    color: var(--darkcolor);
     /* spread elements out */
     line-height: 1.6;
     background-image: url('../img/mountain-white-1.jpg');
@@ -81,7 +85,7 @@ left: calc(-50vw - 5rem);
 
 /*  yes*/
 body, input, select, textarea {
-color: #000000;
+color: var(--darkcolor);
 font-family: "Lato", Helvetica, sans-serif;
 font-size: 1rem;
 font-weight: 300;
@@ -173,8 +177,8 @@ img{
     font-size: 1.5rem;
   }
 
-.imgprofile{
-    border-radius: 50px;
+.profileimg{
+    border-radius: 25px;
     box-shadow: 0 15px 10px rgba(0,0,0,0.3);
 }
 
@@ -267,7 +271,7 @@ footer.grid-2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    color:rgb(0, 0, 5);
+    color:var(--darkcolor);
 }
 
 .projectcard img{
@@ -328,7 +332,7 @@ footer.grid-2 {
     .formcontrol, textarea{
       max-width: 800px;
       background-color: rgb(253, 253, 252);
-      color: #000;
+      color: var(--darkcolor);
       letter-spacing: 1px;
     }
 
@@ -469,22 +473,22 @@ footer.grid-2 {
     /* webkit */
 	::-webkit-input-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: var(--darkcolor) !important;
 	}
 
 	:-moz-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: var(--darkcolor) !important;
 	}
 
 	::-moz-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: var(--darkcolor) !important;
 	}
 
 	:-ms-input-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: var(--darkcolor) !important;
 	}
 
 
@@ -507,7 +511,7 @@ button,
     border-radius: 0.325rem;
     border: 0;
     box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-    color: #000000 !important;
+    color: var(--darkcolor) !important;
     cursor: pointer;
     display: inline-block;
     font-family: "Lato", Helvetica, sans-serif;
@@ -528,8 +532,8 @@ button,
     input[type="button"]:hover,
     button:hover,
     .btn:hover {
-        box-shadow: inset 0 0 0 2px #2ee4bb;
-        color: #2ee4bb !important;
+        box-shadow: inset 0 0 0 2px var(--primarycolor);
+        color: var(--secondarycolor) !important;
     }
 
     input[type="submit"]:active,
@@ -538,8 +542,8 @@ button,
     button:active,
     .btn:active {
         background-color: rgba(73, 252, 212, 0.25);
-        box-shadow: inset 0 0 0 2px #2ee4bb;
-        color: #2ee4bb !important;
+        box-shadow: inset 0 0 0 2px var(--secondarycolor);
+        color: var(--secondarycolor) !important;
     }
 
     input[type="submit"].small,
@@ -606,7 +610,7 @@ button,
     input[type="button"].primary,
     button.primary,
     .btn.primary {
-        background-color: #49fcd4;
+        background-color: var(--secondarycolor);
         box-shadow: none;
         color: #000000 !important;
     }
@@ -616,7 +620,7 @@ button,
         input[type="button"].primary:hover,
         button.primary:hover,
         .btn.primary:hover {
-            background-color: #93ffe7;
+            background-color: rgb(222,242,241);
         }
 
         input[type="submit"].primary:active,
@@ -624,7 +628,7 @@ button,
         input[type="button"].primary:active,
         button.primary:active,
         .btn.primary:active {
-            background-color: #44f2cb;
+            background-color: var(--secondarycolor);
         }
 
 /* Form yes*/
@@ -750,7 +754,7 @@ form {
     input[type="url"]:focus,
     select:focus,
     textarea:focus {
-        border-color: #2ee4bb;
+        border-color: var(--secondarycolor);
     }
 
 
@@ -807,7 +811,7 @@ width: 5rem;
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #2ee4bb;
+			border-color: var(--primarycolor);
 		}
 
 	textarea {
@@ -843,21 +847,27 @@ width: 5rem;
 
     .footersection {
         padding-top: 5vh;
-        background-color:  rgb(1,137,137);
+        background-color:  var(--primarycolor);
         height: 100px;
     }
 
     footer.footer {
         background-color: var(--primarycolor);
-        color:#000;
+        color:var(--darkcolor);
         padding: 1rem;
         margin-top: 9rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
 
     footer ul {
-        display: flex;
+        display: table-cell;
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
         padding: 0;
+        width: 100%;
+        vertical-align: middle;
+
     }
