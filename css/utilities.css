@@ -9,7 +9,16 @@
     padding: 0 40px;
 }
 
+/* #contact {
+    margin: 0 auto;
+    padding: 0 auto;
+} */
+
 .navbar .flex{
+    justify-content: space-between;
+}
+
+section > .footer {
     justify-content: space-between;
 }
 

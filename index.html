@@ -38,7 +38,7 @@ TODO:
 - tags with hover style; active style
 -enhance overall design -->
 
-<body id="wrapper">
+<body>
     <!-- NavBar  -->
     <div class="navbar">
         <!-- add utility class: flex to allign internal elements -->
@@ -359,33 +359,36 @@ TODO:
         </div>
     </section> -->
 
-    <section clas="container grid flex" id="contact">
+    <section clas="container m-5" id="contact">
         <header>
-            <h2>Get in touch</h2>
+            <h2 class="container flex">Get in touch</h2>
         </header>
-        <div class="content">
-            <p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus.
+        <div class="content container flex">
+            <p>interdum et malesuada fames ac ante ipsum primis in faucibus.
                 Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-            <form action="POST" data-netlify="true">
-                <div class="fields">
-                    <div class="field half">
+            <form class="container" action="POST" data-netlify="true">
+                <div class="fields container">
+                    <div class="field">
+                        <label for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name" />
                     </div>
-                    <div class="field half">
+                    <div class="field">
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email" />
                     </div>
                     <div class="field">
+                        <label for="message">Message</label>
                         <textarea name="message" id="message" placeholder="Message" rows="7" columns="1"></textarea>
                     </div>
-                    <div class="field">
+                    <div class="field flex">
                         <input type="file" name="myfile" class="btn primary" id="myfile" placeholder="Upload File"
                             rows="7" />
                     </div>
-                    <div class="field">
+                    <div class="field flex">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
                 </div>
-                <ul class="actions">
+                <ul class="actions flex">
                     <li><input id="sendmessage" type="submit" value="Send Message" class="btn primary" /></li>
                 </ul>
             </form>
@@ -403,29 +406,34 @@ TODO:
             <span class="">this is a long string</span>
         </a>
     </div> -->
+    <section class="container footersection">
+        <footer class="flex footer">
+            <div class="container flex footercontent">
 
-    <footer class="footer py-5">
-        <div class="container grid grid-3">
-            <div>
-                <p class="">
-                    Handcrafted by Joel Godinez &copy; Troy Anthony Media
-                </p>
+                <!-- <span class="footerspan">&copy; Troy Anthony Media</span> -->
+
+                <!-- <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">sdf</a></li>
+                        <li><a href="index.html">sdf</a></li>
+                        <li><a href="index.html">sdf</a></li>
+                    </ul>
+                </nav> -->
+
+
+                <!-- <a href="index.html"></a>
+                        <a href="index.html">sdf</a> -->
+                <span class="footerspan"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></span>
+                <span class="footerspan"><a href="#"><i class="fab fa-github fa-2x"></i></a></span>
+                <span class="footerspan"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></span>
+                <span class="footerspan"><a href="#"><i class="fab fa-angellist fa-2x"></i></a></span>
+                <span class="footerspan"><a href="#"><i class="fab fa-codepen fa-2x"></i></a></span>
+
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">sdf</a></li>
-                    <li><a href="index.html">sdf</a></li>
-                    <li><a href="index.html">sdf</a></li>
-                </ul>
-            </nav>
-            <div class="socials">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-angellist fa-2x"></i></a>
-                <a href="#"><i class="fab fa-codepen fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
+
+        </footer>
+        <span class="flex">&copy; Troy Anthony Media</span>
+    </section>
 
     <script src="script.js"></script>
 </body>
