@@ -491,6 +491,12 @@ footer.grid-2 {
 		color: var(--darkcolor) !important;
 	}
 
+/* add responsive wrap to projects */
+
+.projects .flex{
+    flex-wrap: wrap;
+}
+
 
 /* Button */
 
