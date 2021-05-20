@@ -374,9 +374,9 @@ footer.grid-2 {
       letter-spacing: 1px;
     }
 
-    form > div > input {
-        /* outline: red; */
-    }
+    /* form > div > input {
+         outline: red; 
+    } */
 
     .sendbtn{
         margin-top: 15px;
@@ -743,7 +743,7 @@ form {
     /* mobile (not working in chrome)*/
 @media (max-width: 500px) {
     .navbar {
-        height: 110px;
+        height: auto;
     }
 
     .navbar .flex {
@@ -763,7 +763,7 @@ form {
         padding: 10px 10px;
         /* justify-content: center; */      
       }
-      div.content.container {
+      /* div.content.container { */
         /* outline: 1px solid red; */
         /* overflow-x: hidden;
         text-align: center;
@@ -771,9 +771,13 @@ form {
         /* display: flex;
         justify-content: center; */
         /* branchandlink */
-    } 
+    /* }  */
  
 
+}
+
+.contactme .grid {
+    align-items: flex-start;
 }
 
 img.nasa2019 {
