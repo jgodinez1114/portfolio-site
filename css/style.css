@@ -223,6 +223,7 @@ img{
 }
 
 
+
 /* projects */
 .projects .projectsheading {
     font-size: 2rem;
@@ -498,6 +499,36 @@ footer.grid-2 {
 }
 
 
+.projects .projectcard h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* make hover efect smoother */
+.skills .fab {
+    transition: transform 0.2s ease-in;
+}
+
+/* make hover efect smoother */
+.skills .fas {
+    transition: transform 0.2s ease-in;
+}
+
+/* prevent icons to appear cutoff on hover effect */
+.skills .container {
+    overflow: visible;
+}
+/* add hover effect on icons */
+.skills .fas:hover {
+  transform: translateY(-15px);  
+}
+
+/* add hover effect on icons */
+.skills .fab:hover {
+  transform: translateY(-15px);  
+}
+
+
 /* Button */
 
 input[type="submit"],
@@ -689,9 +720,30 @@ form {
                 width: calc(25% - 0.5rem);
             }
 
+            /* style for smaller screns */
             /* tablet and smaller */
     @media (max-width: 768px) {
-        .grid,
+      /* stack elements */
+      /* body{display: none;} */
+      .grid,
+      .aboutme .grid,
+      .skills .grid,
+      .contactme .grid {   
+          text-align: center;       
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+      }
+
+      .aboutme {
+          height: auto;
+      }
+
+      .aboutmetext{
+        text-align: center;
+        margin-top: 40px;
+      }
+
+        /* .grid,
         .aboutme .grid,
         .skills .grid, 
         .projects .grid
@@ -719,24 +771,24 @@ form {
 
                 form > .fields > .field.quarter {
                     width: calc(100% - 1.5rem);
-                }
+                } */
 
     }
 
-    /* mbile */
-@media(max-width: 500px) {
+    /* mobile (not working in chrome)*/
+@media (max-width: 500px) {
     .navbar {
         height: 110px;
-        }
+    }
 
-        .navbar .flex {
-            flex-direction: column;
-        }
+    .navbar .flex {
+      flex-direction: column;
+    }
 
-        .navbar ul {
-            padding: 10px;
-            background-color: rgba(0,0,0,0.1);
-        }
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0,0,0,0.1);
+    }
 }
 /* form inputs */
 
@@ -834,7 +886,7 @@ width: 5rem;
 
     /* footer */
     .footer .social a{
-        margin: 0 10px;
+        margin: 0 50px;
     }
 
     .footercontent {

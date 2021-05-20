@@ -59,7 +59,7 @@ TODO:
 
     <!-- aboutme -->
     <section class="aboutme">
-        <div class="container grid topsection">
+        <div class="container grid">
             <div class=" aboutmetext">
                 <h1 class="introduction py-3">Hi, Joel here! 👋 </h1>
                 <h2 class="my-5">Your next software engineer</h2>
@@ -83,8 +83,8 @@ TODO:
                 Skills
             </h2>
             <div class="container textcenter my-4">
-                <div>
-                    <i class="fa-3x"></i>
+                
+                    <!-- <i class="fa-3x"></i> -->
                     <ul class="grid grid-11">
                         <li class="fab fa-js fa-3x"></li>
                         <li class="fab fa-github fa-3x"></li>
@@ -99,12 +99,12 @@ TODO:
                         <li class="fas fa-database fa-3x"></li>
                         <!--issue: color cannot be customized to match <li class="iconify fa-4x" data-icon="logos-opencv" data-inline="false"></li> -->
                     </ul>
-                </div>
+               
             </div>
         </div>
     </section>
     <!-- Projects -->
-    <section class="projects" id="projectsheading">
+    <!-- <section class="projects" id="projectsheading">
         <h2 class="projectsheading">Projects</h2>
         <div class="container">
             <ul class="container grid grid-8">
@@ -144,13 +144,14 @@ TODO:
                     </span>
                 </li>
             </ul>
-    </section>
-    <section class="projects " id="projects">
+    </section> -->
+    <section class="projects" id="projects">
+        <h2 class="container projectsheading">Projects</h2>
         <div class="container flex">
                     <!-- Project cards -->
-
+        
         <!--Set up this div to be targeted from the script.js file as "project"-->
-        <figure class="projectcard p-1" id="project1">
+        <figure class="card projectcard p-1" id="project1">
             <a href="https://github.com/jgodinez1114/plant-health-detector">
                 <div class="image project" alt="plant-health-detector">
                     <img src="/img/eazy-sneezy-social.png" alt="Project1">
@@ -369,11 +370,11 @@ TODO:
         </div>
     </section> -->
 
-    <section clas="container m-5" id="contact">
+    <section clas="contactme container m-5" id="contact">
         <header>
             <h2 class="container flex">Get in touch</h2>
         </header>
-        <div class="content container flex">
+        <div class="content container grid flex">
             <p>interdum et malesuada fames ac ante ipsum primis in faucibus.
                 Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
             <form class="container" action="POST" data-netlify="true">
@@ -420,7 +421,7 @@ TODO:
     <footer class="flex footer">
         <ul class="container">
             <!-- <div class="container flex footercontent"> -->
-            <!-- <span class="footerspan">&copy; Troy Anthony Media</span> -->
+            <!-- <span class="social footerspan">&copy; Troy Anthony Media</span> -->
 
             <!-- <nav class="navigation">
                         <ul>
@@ -433,11 +434,11 @@ TODO:
 
             <!-- <a href="index.html"></a>
                             <a href="index.html">sdf</a> -->
-            <span class="footerspan"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></span>
-            <span class="footerspan"><a href="#"><i class="fab fa-github fa-2x"></i></a></span>
-            <span class="footerspan"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></span>
-            <span class="footerspan"><a href="#"><i class="fab fa-angellist fa-2x"></i></a></span>
-            <span class="footerspan"><a href="#"><i class="fab fa-codepen fa-2x"></i></a></span>
+            <span class="social footerspan"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></span>
+            <span class="social footerspan"><a href="#"><i class="fab fa-github fa-2x"></i></a></span>
+            <span class="social footerspan"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></span>
+            <span class="social footerspan"><a href="#"><i class="fab fa-angellist fa-2x"></i></a></span>
+            <span class="social footerspan"><a href="#"><i class="fab fa-codepen fa-2x"></i></a></span>
             <!-- </div> -->
             <span class="flex">&copy; Troy Anthony Media</span>
         </ul>
