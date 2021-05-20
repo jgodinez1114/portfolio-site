@@ -55,7 +55,7 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
-    color: red;
+    /* color: red; */
     /* color: var(--darkcolor); */
     /* spread elements out */
     line-height: 1.6;
@@ -299,6 +299,25 @@ footer p{
     box-sizing: border-box;
 }
 
+p.bio {
+      /* outline: 1px solid red; */
+  font-size: 1.5rem !important;
+  font-weight: 900;
+  margin: none !important;
+  width: 100%;
+  line-height: 1.5;
+  padding: 10px 50px 10px 0px;
+  /* justify text */
+  text-align: justify;
+  text-justify: inter-word;
+  /* justify-content: center; */
+  color: var(--darkcolor);}
+
+div.content.container {
+    /* outline: 1px solid red; */
+    overflow-x: hidden;
+}
+
 footer.grid-2 {
     border-top: 1px solid rgba(0, 0, 0, 0.065);
     /* padding: 0 0; */
@@ -356,7 +375,7 @@ footer.grid-2 {
     }
 
     form > div > input {
-        outline: red;
+        /* outline: red; */
     }
 
     .sendbtn{
@@ -695,7 +714,7 @@ form {
       h1.introduction {
         font-size: 40px;
         color: var(--darkcolor);
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
     }
       h2.introduction {
         font-size: 30px;
@@ -742,9 +761,17 @@ form {
         width: 65%;
         line-height: 1.5;
         padding: 10px 10px;
-        /* justify-content: center; */
-      
+        /* justify-content: center; */      
       }
+      div.content.container {
+        /* outline: 1px solid red; */
+        /* overflow-x: hidden;
+        text-align: center;
+        margin: 0 auto; */
+        /* display: flex;
+        justify-content: center; */
+        /* branchandlink */
+    } 
  
 
 }
@@ -902,4 +929,19 @@ width: 5rem;
         width: 100%;
         vertical-align: middle;
 
+    }
+
+    span.copyright {
+          /* outline: 1px solid red; */
+  font-size: 1.5rem !important;
+  font-weight: 900;
+  margin: none !important;
+  width: 100%;
+  line-height: 1.5;
+  padding: auto;
+  /* justify text */
+  text-align: center;
+  text-justify: inter-word;
+  /* justify-content: center; */
+  color: var(--darkcolor);
     }
