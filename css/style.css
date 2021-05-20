@@ -111,8 +111,8 @@ a{
     margin: 10px 0;
     letter-spacing: .3rem;
 }
-p{
-    font-size: 1vw;
+.contactme p{
+    font-size: 3vw;
     margin: 10px 0;
     letter-spacing: .06rem;
     line-height: 2rem;
@@ -727,11 +727,28 @@ form {
       /* body{display: none;} */
       .grid,
       .aboutme .grid,
-      .skills .grid,
+      /* .skills .grid, */
       .contactme .grid {   
           text-align: center;       
           grid-template-columns: 1fr;
           grid-template-rows: 1fr;
+
+      }
+                
+      h1.introduction {
+        font-size: 40px;
+    }
+      h2.introduction {
+        font-size: 30px;
+    }
+      p.introduction {
+        font-size: 25px;
+    }
+
+      .skills .grid .grid-11 {
+          text-align: center;
+          grid-template-columns: 2fr;
+          grid-template-rows: 2fr;
       }
 
       .aboutme {
@@ -789,8 +806,18 @@ form {
       padding: 10px;
       background-color: rgba(0,0,0,0.1);
     }
+ 
+
 }
-/* form inputs */
+
+#contactmeform {
+    text-align: center;
+    /* outline: 1px solid red; */
+    overflow-x: hidden;
+    margin: auto;
+    padding: 10px;
+}
+/* form inputs */ 
 
 
     input[type="text"]:invalid,
