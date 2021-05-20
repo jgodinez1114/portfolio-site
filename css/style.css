@@ -129,7 +129,13 @@ p.introduction {
     line-height: 2rem;
 } */
 
-
+h2.contact {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: auto;
+    letter-spacing: .3rem;
+}
 img{
     /* keep images within their container */
     width: 100%;
