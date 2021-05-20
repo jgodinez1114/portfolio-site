@@ -135,7 +135,11 @@ img{
     width: 100%;
 }
 
-
+/* hide honeypot spam filter */
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
 /* style the navbar */
 .navbar{
     background-color: rgb(1,137,137);
