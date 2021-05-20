@@ -105,18 +105,30 @@ a{
 }
 
 .aboutme h2{
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin: 10px 0;
     letter-spacing: .3rem;
 }
-.contactme p{
-    font-size: 3vw;
+
+p.introduction {
+  /* outline: 1px solid red; */
+  font-size: 20px!important;
+  margin: auto;
+  width: 65%;
+  line-height: 1.5;
+  padding: 10px 10px;
+  /* justify-content: center; */
+
+}
+/* .contactme p{
+    font-size: 20rem;
     margin: 10px 0;
     letter-spacing: .06rem;
     line-height: 2rem;
-}
+} */
+
 
 img{
     /* keep images within their container */
@@ -180,6 +192,7 @@ img{
 .profileimg{
     border-radius: 25px;
     box-shadow: 0 15px 10px rgba(0,0,0,0.3);
+    animation: slideinfromright 1s ease-in;
 }
 
 .aboutme p{
@@ -191,6 +204,10 @@ img{
     grid-template-columns: 55% 45%;
     gap: 30px;
 
+}
+
+.aboutmetext {
+    animation: slideinfromleft 1s ease-in;
 }
 
 /* add slant effect below aboutme section */
@@ -215,6 +232,7 @@ img{
 /* Skills************************************************* */
 .skills {
     padding-top: 120px;
+    animation: slideinfrombottom 1s ease-in;
 }
 
 .skills .skillsheading{
@@ -720,6 +738,48 @@ form {
                 width: calc(25% - 0.5rem);
             }
 
+
+
+
+/* Animations  */
+
+/* start off screen and end at normal position */
+@keyframes slideinfromleft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* start off screen and end at normal position */
+@keyframes slideinfromright {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* start off screen and end at normal position */
+@keyframes slideinfromtop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* start off screen and end at normal position */
+@keyframes slideinfrombottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
             /* style for smaller screns */
             /* tablet and smaller */
     @media (max-width: 768px) {
@@ -806,6 +866,16 @@ form {
       padding: 10px;
       background-color: rgba(0,0,0,0.1);
     }
+    p.introduction {
+        /* outline: 1px solid red; */
+        font-size: 20px!important;
+        margin: auto;
+        width: 65%;
+        line-height: 1.5;
+        padding: 10px 10px;
+        /* justify-content: center; */
+      
+      }
  
 
 }
