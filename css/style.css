@@ -316,21 +316,7 @@ footer.grid-2 {
   .team{
       float:right;
     }
-/* contact form */
-/* .contactsection{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-} */
 
-/* #contact{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primarycolor);
-    overflow: hidden;
-} */
 
 .letsbuildheader{
     text-align: center;
@@ -346,12 +332,7 @@ footer.grid-2 {
         max-width: 800px;
     }
 
-    /* .letsbuildheader{
-        text-align: center;
-        margin: 0 auto;
-        padding: 40px 0;
-        letter-spacing: 2px;
-    } */
+
  .formhorizontal{
      display: flex;
      justify-content: center;
@@ -391,110 +372,7 @@ footer.grid-2 {
         letter-spacing: 2px;
     }
 
-    /* .btn:hover{
-        transform: translate3d(0px, -40px, 0px);
-    } */
-
-
-  
-
-
-
-
-
-
-
-
-
-
     
-    
-    /* .tech .team{
-        display: flex;
-    } */
-/*     
-    .contactform{
-        position: relative; */
-        /* top: 60px; */
-        /* height: 100%; */
-        /* width: 400px;
-        padding: 40px;
-        z-index: 100;
-        justify-self: flex-end;
-        justify-content: center;
-    } */
-    /* center the contact form horizontally */
-    /* .center .contactform{
-        margin: auto;
-    } */
-    /* add spacing between the form elements */
-    /* .contactform .formcontrol{
-      margin: 30px;
-      
-    } */
-
-    
-    /* target the input elements */
-    /* .contactform input[type='text'],
-    .contactform input[type='email'] {
-        border: 0;
-        border-bottom: 1px solid rgb(180, 190, 203); */
-        /* extend the form inputs across the card */
-        /* width: 100%;
-        padding: 3px;
-        font-size: 1rem;
-    } */
-    
-    /* remove border when clicking an input */
-    /* .contactform input:focus{
-        outline: none;
-    } */
-    
-    /* .contactform h2{
-        font-size: 2vw;
-        font-weight: 700;
-        line-height: 1.2;
-        margin: 10px 0;
-        letter-spacing: .3rem;
-        text-align: center;
-        justify-content: center;
-    } */
-    
-    /* .contactform textarea{ */
-        /* remove outline on click event */
-        /* outline: none; */
-        /* disable resize function */
-        /* resize: none; */
-        /* justify-content: center; */
-        /* remove default scrolls in IE */
-        /* overflow: auto; */
-        /* width: 100%; */
-        /* Safari/Chrome webkit */
-        /* -webkit-box-sizing: border-box; */
-        /* Firefox, other Gecko */
-        /* -moz-box-sizing: border-box; */
-        /* Opera/IE 8+ */
-        /* box-sizing: border-box; */
-    /* } */
-
-    /* .sendbtn {
-        height: 3em;
-        width: 100%;
-        color:rgb(180, 190, 203);
-        box-sizing: border-box;
-    }
-
-    .sendbtn:hover {
-        background: rgb(180, 190, 203);
-        color:rgba(169, 253, 172, 1);
-        border: 1px solid black;
-        box-sizing: border-box;
-        box-shadow: inset 5rem 0 0 5rem pink;
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;  
-    } */
-
-
     /* ****************************************************************************************** */
 
 
@@ -829,36 +707,6 @@ form {
         text-align: center;
         margin-top: 40px;
       }
-
-        /* .grid,
-        .aboutme .grid,
-        .skills .grid, 
-        .projects .grid
-         {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-        }
-        form > .fields {
-            margin: -1.5rem 0 2rem -1.5rem;
-            width: calc(100% + 3rem);
-        }
-
-            form > .fields > .field {
-                padding: 1.5rem 0 0 1.5rem;
-                width: calc(100% - 1.5rem);
-            }
-
-                form > .fields > .field.half {
-                    width: calc(100% - 1.5rem);
-                }
-
-                form > .fields > .field.third {
-                    width: calc(100% - 1.5rem);
-                }
-
-                form > .fields > .field.quarter {
-                    width: calc(100% - 1.5rem);
-                } */
 
     }
 
